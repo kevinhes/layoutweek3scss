@@ -1,0 +1,368 @@
+.banner{
+    height: 840px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+    @include banner-setting;
+    .container{
+        height: inherit;
+    }
+    h2{
+        width: 100%;
+        text-align: right;
+        font-size: 64px;
+        line-height: 1.5;
+        color: $color-secondary;
+        font-weight: bold;
+    }
+    span{
+        font-size: 36px;
+        line-height: 52px;
+    }
+}
+@include tablet(){
+    .banner{
+        h2{
+            font-size: 48px;
+            line-height: 70px;
+        }
+        span{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+}
+@include mobile(){
+    .banner{
+        height: 394px;
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
+        h2{
+            font-size: 32px;
+            line-height: 1.5;
+        }
+        span{
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
+.slogan{
+    background: $color-third;
+    h2{
+        text-align: center;
+    }
+}
+.slogan-list{
+    li{
+        width: 22.97%;
+        span, h3{
+            text-align: center;
+        }
+        span{
+            display: block;
+            font-size: 84px;
+        }
+    }
+    li:nth-child(2){
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    li:nth-child(3){
+        margin-right: 30px;
+    }
+}
+
+@include tablet(){
+    .slogan-list{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            width: 36.95%;
+        }
+        li:nth-child(2){
+            margin-left: 0;
+            margin-right: 0;
+        }
+        li:nth-child(odd){
+            margin-right: 105px;
+        }
+    }
+}
+
+@include mobile(){
+    .slogan{
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+    .slogan-list{
+        justify-content: center;
+        .title{
+            font-size: 24px;
+            line-height: 1.5;
+        }
+        li{
+            width: 75%;
+        }
+        li:nth-child(odd){
+            margin-right: 0;
+        }
+    }
+}
+
+.classic{
+    .subtitle{
+        text-align: center;
+    }
+}
+.classic-list{
+    .classic-bg{
+        width: 57.2%;
+        height: 320px;
+        @include banner-setting
+    }
+    li:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    p{
+        font-style: italic;
+    }
+    span{
+        font-size: 44px;
+        line-height: 72px;
+        vertical-align: bottom;
+    }
+    .optical-bg{
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-1.png?raw=true);
+    }
+    .sunglasses-bg{
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true);
+    }
+    .functional{
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true);
+    }
+}
+
+@include tablet(){
+    .classic-list{
+        .classic-bg{
+            width: 56.52%;
+            height: 168px;
+        }
+        .title{
+            font-size: 28px;
+            line-height: 37px;
+        }
+        li:nth-child(2){
+            flex-direction: row;
+        }
+        span{
+            font-size: 36px;
+            line-height: 37px;
+        }
+    }
+}
+
+@include mobile(){
+    .classic-list{
+        li{
+            position: relative;
+            justify-content: center;
+        }
+        p{
+            position: absolute;
+        }
+        .classic-bg{
+            width: 100%;
+            height: 134px;
+        }
+    }
+}
+
+.joint{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+    height: 705px;
+    @include banner-setting;
+    h2{
+        text-align: center;
+    }
+}
+.joint-list{
+    li{
+        width: 48.64%;
+        position: relative;
+        background: white;
+        height: 455px;
+    }
+    .doublea{
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true);
+    }
+    .youth{
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true);
+    }
+    .youth, .doublea{
+        position: absolute;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        @include banner-setting;
+    }
+    .joint-text{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@include tablet(){
+    .joint{
+        height: 452px;
+    }
+    .joint-list{
+        li{
+            height: 278px;
+            width: 47.82%;
+        }
+    }
+}
+
+@include mobile(){
+    .joint{
+        height: 719px;
+        .title{
+            line-height: 1.5;
+            font-size: 20px;
+        }
+    }
+    .joint-list{
+        flex-wrap: wrap;
+        li{
+            height: 291px;
+            width: 100%;
+        }
+        .title{
+            font-size: 32px;
+            line-height: 43px;
+        }
+    }
+}
+
+.rec{
+    .title{
+        text-align: center;
+    }
+}
+
+.rec-card{
+    width: 22.97%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px gray;
+    img{
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 4px 4px 0px 0px;
+    }
+    .card-title, .card-text, .card-time{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .card-time{
+        padding-bottom: 16px;
+    }
+}
+
+@include tablet(){
+    .rec-list{
+        flex-wrap: wrap;
+    }
+    .rec-card{
+        width: 47.82%;
+        .card-title, .card-text, .card-time{
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+}
+@include mobile(){
+    .rec-card{
+        width: 100%;
+        .card-title, .card-text, .card-time{
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+}
+
+.contact{
+    background: $color-third;
+    .title{
+        text-align: center;
+    }
+    p{
+        width: 66.66%;
+        margin: 0 auto 20px auto;
+    }
+    form{
+        width: 66.66%;
+        margin: 0 auto;
+        .form-text{
+            width: 100%;
+            padding: 12px 0 14px 16px;
+            background: $color-third;
+        }
+        .feedback{
+            padding: 12px 0 100px 16px;
+            width: 100%;
+            background: $color-third;
+        }
+        .btn{
+            background: $color-primary;
+            color: white;
+            padding: 16px 143px;
+            margin: 0 auto;
+            line-height: 1.5;
+            border: 0px;
+        }
+    }
+}
+@include tablet(){
+    .contact{
+        form{
+            .btn{
+                padding: 10px 77px;
+                margin: 0 auto;
+                line-height: 1.5;
+                border: 0px;
+            }
+        }
+    }
+}
+@include mobile(){
+    .contact{
+        .title{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        p{
+            width: 100%;
+            margin: 0 auto 8px auto;
+        }
+        form{
+            width: 100%;
+            margin: 0 auto;
+            .form-text{
+                padding: 7px 0 9px 12px;
+            }
+            .feedback{
+                padding: 9px 0 71px 12px;
+            }
+            .btn{
+                padding: 8px 54px;
+                line-height: 1.5;
+            }
+        }
+    }
+}

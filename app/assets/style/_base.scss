@@ -1,0 +1,530 @@
+// 通用類別
+
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+
+.d-in-block{
+    display: inline-block;
+}
+
+.justify-content-sb{
+    justify-content: space-between;
+}
+
+.justify-content-c{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.vertical-top{
+    vertical-align: top;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.bg-secondary{
+    background: $color-secondary;
+}
+
+.bg-black{
+    background: #000;
+}
+
+.l-hide{
+    display: none;
+    @include tablet(){
+        display: block;
+    }
+}
+
+.m-hide{
+    @include tablet(){
+        display: none;
+    }
+}
+
+.sm-hide{
+    @include mobile(){
+        display: none;
+    }
+}
+
+@include mobile(){
+    .flex-direction-column-sm{
+        flex-direction: column;
+    }
+}
+
+.pagination{
+    width: 400px;
+    .active{
+        color: white;
+        background: #000000;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        display: block;
+        border-left: 1px solid #555555;
+        border-top: 1px solid #555555;
+        border-bottom: 1px solid #555555;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 12px 16px;
+    }
+    .next-page{
+        border-right: 1px solid #555555;
+        background: #F2F2F2;
+    }
+    .next-page, .pre-page{
+        font-size: 19px;
+        line-height: 26px;
+        padding: 11px 12px;
+    } 
+    @include mobile(){
+        width: 345px;
+        a{
+            font-size: 16px;
+            line-height: 21px;
+            padding: 12px 15px;
+        }
+        .pre-page, .next-page{
+            padding: 10px 10px;
+            font-size: 17px;
+            line-height: 24px;
+        }
+    }
+}
+
+.location-card{
+    border: 1px solid #00000020;
+    .card-img{
+        img{
+            width: 100%;
+        }
+    }
+    .card-title{
+        padding: 12px 0px 12px 24px;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: bold;
+        border-bottom: 1px solid #00000020;
+    }
+    .card-text{
+        padding: 16px 24px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .card-link{
+        text-align: center;
+        background: #000;
+        padding: 20px 0;
+        font-size: 19px;
+        line-height: 1.5;
+    }
+    @include tablet(){
+        .card-title{
+            font-size: 16px;
+            padding: 8px 0 8px 24px;
+        }
+        .card-text{
+            font-size: 14px;
+        }
+        .card-link{
+            padding: 16px 0;
+            font-size: 14px;
+        }
+    }
+}
+
+// 文字
+
+.link-white{
+    text-decoration: none;
+    color: $color-white;
+}
+
+.link-black{
+    text-decoration: none;
+    color: #000;
+}
+
+.text-white{
+    color: $color-white;
+}
+
+.text-primary{
+    color: $color-primary;
+}
+
+.text-secondary{
+    color: $color-secondary;
+}
+
+.text-less{
+    color: #555555;
+}
+
+.title{
+    font-size: $font-size-reference*2;
+    line-height: 70px;
+    @include mobile(){
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+.fz-14{
+    font-size: 14px;
+}
+
+.fz-18{
+    font-size: 18px;
+}
+
+.fz-20{
+    font-size: 20px;
+}
+
+.fz-24{
+    font-size: 24px;
+}
+
+.fz-32{
+    font-size: 32px;
+}
+
+.lh125{
+    line-height: 1.25;
+}
+
+.lh15{
+    line-height: 1.5;
+}
+
+.font-weight-b{
+    font-weight: bold;
+}
+
+.font-m{
+    font-size: $font-size-link;
+}
+
+//border
+
+.border-x-1{
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+}
+
+.title-top{
+    padding-left: 16px;
+    border-left: 8px solid $color-primary;
+    @include tablet(){
+        border-left: 4px solid $color-primary;
+    }
+    @include mobile(){
+        padding-left: 8px;
+    }
+}
+
+.subtitle{
+    font-size: $font-size-reference*1.5;
+    line-height: 1.5;
+    @include mobile(){
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+@include tablet(){
+    .font-m-16{
+        font-size: 16px;
+    }
+    .font-m-14{
+        font-size: 14px;
+    }
+    .font-m-24{
+        font-size: 24px;
+    }
+}
+
+@include mobile(){
+    .font-sm-16{
+        font-size: 16px;
+    }
+    .font-sm-14{
+        font-size: 14px;
+    }
+}
+
+// 推移
+
+.py-27{
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.py-60-80{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.py-80-160{
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.pt-40{
+    padding-top: 40px;
+}
+
+.pt-96{
+    padding-top: 96px;
+}
+
+.pb-32{
+    padding-bottom: 32px;
+}
+
+.pb-160{
+    padding-bottom: 160px;
+}
+
+.pl-95{
+    padding-left: 95px;
+}
+
+//margin
+
+.mb-4{
+    margin-bottom: 4px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-26{
+    margin-bottom: 26px;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.mb-36{
+    margin-bottom: 36px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mb-96{
+    margin-bottom: 96px;
+}
+
+.ml-32{
+    margin-left: 32px;
+}
+
+.mr-8{
+    margin-right: 8px;
+}
+
+.mr-11{
+    margin-right: 11px;
+}
+
+.mr-30{
+    margin-right: 30px;
+}
+
+.mr-32{
+    margin-right: 32px;
+}
+
+// tablet padding
+
+@include tablet(){
+    .m-pt-32{
+        padding-top: 32px;
+    }
+
+    .m-pt-60{
+        padding-top: 60px;
+    }
+    
+    .m-pb-24{
+        padding-bottom: 24px;
+    }
+    
+    .m-pb-96{
+        padding-bottom: 96px;
+    }
+    
+    .m-pl-39{
+        padding-left: 39px;
+    }
+    
+    .m-pl-60{
+        padding-left: 60px;
+    }
+    
+    .m-pr-39{
+        padding-right: 39px;
+    }
+
+    .m-px-39{
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+
+    .m-py-14{
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .m-py-56-96{
+        padding-top: 56px;
+        padding-bottom: 96px;
+    }
+    .m-py-40-56{
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
+}
+
+//tablet margin
+
+@include tablet(){
+    .m-mb-8{
+        margin-bottom: 8px;
+    }
+    
+    .m-mb-40{
+        margin-bottom: 40px;
+    }
+    
+    .m-mb-24{
+        margin-bottom: 24px;
+    }
+
+    .m-mb-32{
+        margin-bottom: 32px;
+    }
+    .m-ml-0{
+        margin-left: 0;
+    }
+    .m-mr-32{
+        margin-right: 32px;
+    }
+}
+
+//mobile padding
+
+@include mobile(){
+    .sm-pt-28{
+        padding-top: 28px;
+    }
+    .sm-pb-20{
+        padding-bottom: 20px;
+    }
+    .sm-pb-56{
+        padding-bottom: 56px;
+    }
+    .sm-pl-0{
+        padding-left: 0px;
+    }
+    .sm-pl-15{
+        padding-left: 15px;
+    }
+    .sm-pr-15{
+        padding-right: 15px;
+    }
+    .sm-px-15{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sm-px-60{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .sm-py-5{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .sm-py-32-56{
+        padding-top: 32px;
+        padding-bottom: 56px;
+    }
+    .sm-py-32-40{
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+}
+
+// moblie margin
+
+@include mobile(){
+    .sm-mb-0{
+        margin-bottom: 0px;
+    }
+
+    .sm-mb-24{
+        margin-bottom: 24px;
+    }
+
+    .sm-mb-8{
+        margin-bottom: 8px;
+    }
+
+    .sm-mb-16{
+        margin-bottom: 16px;
+    }
+
+    .sm-mb-20{
+        margin-bottom: 20px;
+    }
+
+    .sm-mb-28{
+        margin-bottom: 28px;
+    }
+    
+    .sm-mb-40{
+        margin-bottom: 40px;
+    }
+
+    .sm-mr-0{
+        margin-right: 0px;
+    }
+}
+
+//
+
+.mx-auto{
+    margin: 0 auto;
+}
+

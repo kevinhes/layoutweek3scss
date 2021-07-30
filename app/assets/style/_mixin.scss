@@ -1,0 +1,10 @@
+@mixin hide-text{
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+};
+
+@mixin banner-setting{
+    background-size: cover;
+    background-position: center;
+};
