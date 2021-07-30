@@ -1,10 +1,48 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<div class="home-page">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header d-flex justify-content-sb align-items-center">
+    <div class="logo">
+      <h1><a href="index.html">眼鏡電商</a></h1>
+    </div>
+    <ul class="navbar d-flex justify-content-sb align-items-center">
+      <li>
+        <a href="products-optical.html" class="d-block">
+          <p>系列鏡框</p>
+        </a>
+      </li>
+      <li>
+        <a href="./location.html" class="d-block">
+          <p>門市據點</p>
+        </a>
+      </li>
+      <li>
+        <a href="./blog.html" class="d-block">
+          <p>部落格</p>
+        </a>
+      </li>
+      <li>
+        <a href="./faq.html" class="d-block">
+          <p>常見問題</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="home-page">
     <div class="banner">
         <div class="container d-flex align-items-center m-px-39 sm-px-15">
             <h2><span>Promise-Desert 2020 早春系列</span><br>看得清，才能看得遠</h2>
@@ -136,3 +174,78 @@ current: index
         </div>
     </div>
 </div>
+
+  <div class="footer">
+    <div class="footer-link container d-flex justify-content-sb">
+      <div class="footer-contact">
+        <ul class="footer-navbar d-flex">
+          <li>
+            <a href="#">首頁</a>
+          </li>
+          <li>
+            <a href="#">系列鏡框</a>
+          </li>
+          <li>
+            <a href="#">門市據點</a>
+          </li>
+          <li>
+            <a href="#">部落格</a>
+          </li>
+          <li>
+            <a href="#">常見問題</a>
+          </li>
+        </ul>
+        <ul class="footer-info">
+          <li>
+            <a href="tel:+0800-000-000" class="d-flex align-items-center">
+              <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg" alt="phone">
+              <p>0800-000-000</p>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:glasses@business.com" class="d-flex align-items-center">
+              <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg" alt="mail">
+              <p>glasses@business.com</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="sns-link d-flex">
+        <li>
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-fb.svg" alt="" class="d-block">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-ig.svg" alt="" class="d-block">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-line.svg" alt="" class="d-block">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="footer-privacy container d-flex justify-content-sb text-white">
+      <p>Copyright © 2020 Glasses.All rights reserved.</p>
+      <ul class="privacy-link d-flex justify-content-sb align-items-center">
+        <li>
+          <a href="#">
+            <p>隱私權政策</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>服務條款</p>
+          </a>
+        </li>
+      </ul>
+    </ul>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
