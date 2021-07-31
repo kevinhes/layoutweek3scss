@@ -55,6 +55,10 @@ img {
 * {
   font-family: roboto,Noto Sans; }
 
+.container {
+  max-width: 1110px;
+  margin: 0 auto; }
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,10 +88,6 @@ img {
 .vertical-top {
   vertical-align: top; }
 
-.container {
-  max-width: 1110px;
-  margin: 0 auto; }
-
 .bg-secondary {
   background: #650300; }
 
@@ -115,78 +115,6 @@ img {
         -ms-flex-direction: column;
             flex-direction: column; } }
 
-.pagination {
-  width: 400px; }
-  .pagination .active {
-    color: white;
-    background: #000000; }
-  .pagination a {
-    text-decoration: none;
-    color: #000;
-    display: block;
-    border-left: 1px solid #555555;
-    border-top: 1px solid #555555;
-    border-bottom: 1px solid #555555;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 12px 16px; }
-  .pagination .next-page {
-    border-right: 1px solid #555555;
-    background: #F2F2F2; }
-  .pagination .next-page, .pagination .pre-page {
-    font-size: 19px;
-    line-height: 26px;
-    padding: 11px 12px; }
-  @media (max-width: 767px) {
-    .pagination {
-      width: 345px; }
-      .pagination a {
-        font-size: 16px;
-        line-height: 21px;
-        padding: 12px 15px; }
-      .pagination .pre-page, .pagination .next-page {
-        padding: 10px 10px;
-        font-size: 17px;
-        line-height: 24px; } }
-
-.location-card {
-  border: 1px solid #00000020; }
-  .location-card .card-img img {
-    width: 100%; }
-  .location-card .card-title {
-    padding: 12px 0px 12px 24px;
-    font-size: 24px;
-    line-height: 1.5;
-    font-weight: bold;
-    border-bottom: 1px solid #00000020; }
-  .location-card .card-text {
-    padding: 16px 24px;
-    font-size: 20px;
-    line-height: 1.5; }
-  .location-card .card-link {
-    text-align: center;
-    background: #000;
-    padding: 20px 0;
-    font-size: 19px;
-    line-height: 1.5; }
-  @media (max-width: 992px) {
-    .location-card .card-title {
-      font-size: 16px;
-      padding: 8px 0 8px 24px; }
-    .location-card .card-text {
-      font-size: 14px; }
-    .location-card .card-link {
-      padding: 16px 0;
-      font-size: 14px; } }
-
-.link-white {
-  text-decoration: none;
-  color: #fff; }
-
-.link-black {
-  text-decoration: none;
-  color: #000; }
-
 .text-white {
   color: #fff; }
 
@@ -198,14 +126,6 @@ img {
 
 .text-less {
   color: #555555; }
-
-.title {
-  font-size: 48px;
-  line-height: 70px; }
-  @media (max-width: 767px) {
-    .title {
-      font-size: 28px;
-      line-height: 40px; } }
 
 .fz-14 {
   font-size: 14px; }
@@ -233,42 +153,6 @@ img {
 
 .font-m {
   font-size: 20px; }
-
-.border-x-1 {
-  border-left: 1px solid #DCDCDC;
-  border-right: 1px solid #DCDCDC; }
-
-.title-top {
-  padding-left: 16px;
-  border-left: 8px solid #AA0601; }
-  @media (max-width: 992px) {
-    .title-top {
-      border-left: 4px solid #AA0601; } }
-  @media (max-width: 767px) {
-    .title-top {
-      padding-left: 8px; } }
-
-.subtitle {
-  font-size: 36px;
-  line-height: 1.5; }
-  @media (max-width: 767px) {
-    .subtitle {
-      font-size: 20px;
-      line-height: 1.5; } }
-
-@media (max-width: 992px) {
-  .font-m-16 {
-    font-size: 16px; }
-  .font-m-14 {
-    font-size: 14px; }
-  .font-m-24 {
-    font-size: 24px; } }
-
-@media (max-width: 767px) {
-  .font-sm-16 {
-    font-size: 16px; }
-  .font-sm-14 {
-    font-size: 14px; } }
 
 .py-27 {
   padding-top: 27px;
@@ -433,6 +317,122 @@ img {
 
 .mx-auto {
   margin: 0 auto; }
+
+.pagination {
+  width: 400px; }
+  .pagination .active {
+    color: white;
+    background: #000000; }
+  .pagination a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    border-left: 1px solid #555555;
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 12px 16px; }
+  .pagination .next-page {
+    border-right: 1px solid #555555;
+    background: #F2F2F2; }
+  .pagination .next-page, .pagination .pre-page {
+    font-size: 19px;
+    line-height: 26px;
+    padding: 11px 12px; }
+  @media (max-width: 767px) {
+    .pagination {
+      width: 345px; }
+      .pagination a {
+        font-size: 16px;
+        line-height: 21px;
+        padding: 12px 15px; }
+      .pagination .pre-page, .pagination .next-page {
+        padding: 10px 10px;
+        font-size: 17px;
+        line-height: 24px; } }
+
+.location-card {
+  border: 1px solid #00000020; }
+  .location-card .card-img img {
+    width: 100%; }
+  .location-card .card-title {
+    padding: 12px 0px 12px 24px;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+    border-bottom: 1px solid #00000020; }
+  .location-card .card-text {
+    padding: 16px 24px;
+    font-size: 20px;
+    line-height: 1.5; }
+  .location-card .card-link {
+    text-align: center;
+    background: #000;
+    padding: 20px 0;
+    font-size: 19px;
+    line-height: 1.5; }
+  @media (max-width: 992px) {
+    .location-card .card-title {
+      font-size: 16px;
+      padding: 8px 0 8px 24px; }
+    .location-card .card-text {
+      font-size: 14px; }
+    .location-card .card-link {
+      padding: 16px 0;
+      font-size: 14px; } }
+
+.link-white {
+  text-decoration: none;
+  color: #fff; }
+
+.link-black {
+  text-decoration: none;
+  color: #000; }
+
+.title {
+  font-size: 48px;
+  line-height: 70px; }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 28px;
+      line-height: 40px; } }
+
+.border-x-1 {
+  border-left: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC; }
+
+.title-top {
+  padding-left: 16px;
+  border-left: 8px solid #AA0601; }
+  @media (max-width: 992px) {
+    .title-top {
+      border-left: 4px solid #AA0601; } }
+  @media (max-width: 767px) {
+    .title-top {
+      padding-left: 8px; } }
+
+.subtitle {
+  font-size: 36px;
+  line-height: 1.5; }
+  @media (max-width: 767px) {
+    .subtitle {
+      font-size: 20px;
+      line-height: 1.5; } }
+
+@media (max-width: 992px) {
+  .font-m-16 {
+    font-size: 16px; }
+  .font-m-14 {
+    font-size: 14px; }
+  .font-m-24 {
+    font-size: 24px; } }
+
+@media (max-width: 767px) {
+  .font-sm-16 {
+    font-size: 16px; }
+  .font-sm-14 {
+    font-size: 14px; } }
 
 .header {
   background: #AA0601;
